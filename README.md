@@ -1,12 +1,12 @@
-                                                     IPL Batsman vs Bowler Statistics
+                                            IPL Batsman vs Bowler Statistics
 
 A simple web application to view head-to-head statistics between batsmen and bowlers in IPL cricket matches. Upload your IPL delivery data and explore player matchups with beautiful visualizations.
 
-Made with ❤️ for Cricket Analytics
 
 
 
 🚀 Features
+
 
 📊 Head-to-Head Stats: View detailed statistics between any batsman and bowler
 
@@ -20,7 +20,9 @@ Made with ❤️ for Cricket Analytics
 
 
 
+
 🛠️ Technologies Used
+
 
 HTML5 - Page structure
 
@@ -30,13 +32,16 @@ JavaScript - Data processing and interactivity
 
 
 
+
 🏏 About IPL Data
+
 
 This project works with IPL ball-by-ball delivery data. You can find sample datasets from various cricket data repositories or official IPL sources.
 
 
 
 🎯 How to Use
+
 
 1. Upload CSV File
 
@@ -62,7 +67,9 @@ This project works with IPL ball-by-ball delivery data. You can find sample data
 
 
 
+
 📊 Statistics Displayed
+
 Runs Scored, 
 Balls Faced, 
 Strike Rate, 
@@ -75,7 +82,9 @@ Ball Analysis Chart
 
 
 
+
 💾 Data Format
+
 
 The application expects a CSV file with the following columns:
 
@@ -86,8 +95,12 @@ extras_type, is_wicket, player_dismissed, dismissal_kind, fielder
 
 
 
+
 🌐 Live Demo
 You can use this application directly by opening the index.html file in your browser. No server setup required!
+
+Made with ❤️ for Cricket Analytics
+
 
 
 
