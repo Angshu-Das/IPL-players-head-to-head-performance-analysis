@@ -1,0 +1,259 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+/* Upload Section */
+.upload-section {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.upload-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.upload-section input {
+    padding: 10px;
+    border: 2px dashed #007bff;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.file-info {
+    margin-top: 10px;
+    padding: 10px;
+    background: #d4edda;
+    color: #155724;
+    border-radius: 5px;
+    display: none;
+}
+
+/* Players Section */
+.players-section {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.player-box {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    background: #f8f9fa;
+}
+
+.player-box h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.batsman-box {
+    border-left: 5px solid #28a745;
+}
+
+.bowler-box {
+    border-left: 5px solid #dc3545;
+}
+
+.player-box select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.player-image {
+    width: 150px;
+    height: 150px;
+    margin: 15px auto;
+    background: #e9ecef;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+    font-size: 14px;
+    text-align: center;
+    border: 2px dashed #adb5bd;
+}
+
+.player-image .placeholder {
+    padding: 10px;
+}
+
+.player-image .player-display {
+    text-align: center;
+    padding: 10px;
+}
+
+.player-image .player-display .icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.player-image .player-display .name {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.player-image .player-display .role {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Button */
+button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 15px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,123,255,0.3);
+}
+
+button:disabled {
+    background: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Results Section */
+.results-section {
+    display: none;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#matchTitle {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.stats-table {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.stat-card {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #007bff;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #6c757d;
+    margin-top: 5px;
+}
+
+.no-data {
+    text-align: center;
+    padding: 40px;
+    color: #6c757d;
+    font-size: 18px;
+}
+
+/* Charts Section */
+.charts-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.chart-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.chart-box h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .players-section {
+        flex-direction: column;
+    }
+    
+    .player-box {
+        min-width: 100%;
+    }
+    
+    .charts-section {
+        grid-template-columns: 1fr;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+}
