@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Player Stats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🏏 IPL Batsman vs Bowler Statistics</h1>
+        
+        <!-- File Upload Section -->
+        <div class="upload-section">
+            <label for="csvFile">Upload your IPL CSV file:</label>
+            <input type="file" id="csvFile" accept=".csv">
+            <div id="fileInfo" class="file-info"></div>
+        </div>
+
+        <!-- Player Selection Section -->
+        <div class="players-section">
+            <!-- Batsman Section (Left) -->
+            <div class="player-box batsman-box">
+                <h2>Batsman</h2>
+                <select id="batsman" disabled>
+                    <option value="">Select batsman...</option>
+                </select>
+                <div id="batsmanImage" class="player-image">
+                    <div class="placeholder">Select a batsman to see image</div>
+                </div>
+            </div>
+
+            <!-- Bowler Section (Right) -->
+            <div class="player-box bowler-box">
+                <h2>Bowler</h2>
+                <select id="bowler" disabled>
+                    <option value="">Select bowler...</option>
+                </select>
+                <div id="bowlerImage" class="player-image">
+                    <div class="placeholder">Select a bowler to see image</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Show Stats Button -->
+        <button id="showStats" disabled>Show Statistics</button>
+
+        <!-- Results Section -->
+        <div id="results" class="results-section">
+            <h2 id="matchTitle">Head to Head Statistics</h2>
+            
+            <!-- Stats Table -->
+            <div id="statsTable" class="stats-table"></div>
+            
+            <!-- Charts Section -->
+            <div class="charts-section">
+                <div class="chart-box">
+                    <h3>Runs Distribution</h3>
+                    <canvas id="runsChart"></canvas>
+                </div>
+                <div class="chart-box">
+                    <h3>Ball Analysis</h3>
+                    <canvas id="ballsChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
